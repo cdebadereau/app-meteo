@@ -82,11 +82,22 @@ main {
   color: rgb(71, 70, 70);
   display: flex;
   justify-content: space-between;
+  line-height: 23px;
 }
 
 .weather-app-description {
   margin: 0;
   font-size: 25px;
+}
+
+.humidity-data {
+  border-left: 1px solid #c7c7c7bc;
+  padding-left: 20px;
+}
+
+.precipitation-data {
+  border-left: 1px solid #c7c7c7bc;
+  padding-left: 20px;
 }
 
 footer {
