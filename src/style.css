@@ -4,7 +4,7 @@ body {
 }
 
 .weather-app {
-  background-color: #4595e1;
+  background: #c0d6e8;
   max-width: 600px;
   margin: 20px auto;
   padding: 30px;
@@ -80,7 +80,7 @@ main {
 }
 
 .weather-app-details {
-  background: rgba(255, 255, 255, 0.263);
+  background: #f7eedd;
   border-radius: 5px;
   padding: 20px;
 }
