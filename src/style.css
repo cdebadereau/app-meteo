@@ -71,18 +71,16 @@ main {
   font-weight: 600;
 }
 
-.weather-app-unit {
-  font-size: 25px;
-  font-weight: 500;
-  position: absolute;
-  top: -33px;
-  left: -15px;
-}
-
 .weather-app-details {
   background: #f7eedd;
   border-radius: 5px;
   padding: 20px;
+}
+
+.weather-app-unit {
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 30px;
 }
 
 .weather-app-details ul {
