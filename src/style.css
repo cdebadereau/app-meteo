@@ -3,6 +3,11 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+header {
+  border-bottom: 1px solid rgba(190, 187, 187, 0.656);
+  padding-bottom: 20px;
+}
+
 .weather-app {
   background-color: #4595e1;
   max-width: 600px;
@@ -10,4 +15,24 @@ body {
   padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 5px;
+}
+
+.search-form-input {
+  background-color: rgb(255, 245, 233);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 80%;
+  font-size: 15px;
+}
+
+.search-form-button {
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 30px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  font-size: 15px;
 }
