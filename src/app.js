@@ -10,6 +10,11 @@ function refreshWeather(response) {
   let pressureElement = document.querySelector("#pressure");
   let currentTime = document.querySelector("#current-time");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#weather-icon");
+  icon.innerHTML = `<img
+              src="${response.data.condition.icon_url}"
+              class="weather-app-icon"
+            />`;
 
   temperatureElement.innerHTML = currentTemperature;
   cityName.innerHTML = response.data.city;
