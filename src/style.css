@@ -117,12 +117,8 @@ main {
   margin: 20px 10px;
   line-height: 30px;
   text-align: center;
-}
-
-.weather-forecast-section {
-  background: rgba(220, 234, 178, 0.64);
-  border-radius: 5px;
-  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {

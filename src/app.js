@@ -61,7 +61,31 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+      <div class="forecast-day">
+        <div class="forecast-date">${day}</div>
+        <div class="forecast-icon">☀️</div>
+        <div class="forecast-temperatures">
+          <div class="forecast-temperature-max">
+            <stron>18°</strong>
+          </div>
+          <div class="forecast-temperature-min">12°</div>
+        </div>
+      </div>`;
+  });
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Montréal");
+displayForecast();
