@@ -4,8 +4,20 @@ function refreshWeather(response) {
   );
   let currentTemperature = Math.round(response.data.temperature.current);
   let cityName = document.querySelector("#weather-app-city");
-  cityName.innerHTML = response.data.city;
+  let descriptionElement = document.querySelector("#weather-app-description");
+  let windElement = document.querySelector("#wind");
+  let humidityElement = document.querySelector("#humidity");
+  let pressureElement = document.querySelector("#pressure");
+  console.log(response.data);
+
   temperatureElement.innerHTML = currentTemperature;
+  cityName.innerHTML = response.data.city;
+  descriptionElement.innerHTML =
+    response.data.condition.description.charAt(0).toUpperCase() +
+    response.data.condition.description.slice(1);
+  windElement.innerHTML = `${response.data.wind.speed}%`;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  pressureElement.innerHTML = `${response.data.temperature.pressure}hPa`;
 }
 
 function searchCity(city) {
