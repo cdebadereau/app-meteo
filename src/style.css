@@ -121,6 +121,10 @@ main {
   justify-content: space-between;
 }
 
+.forecast-icon {
+  width: 70px;
+}
+
 footer {
   text-align: center;
   font-size: 12px;
